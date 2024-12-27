@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>VivaHaven</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/intlTelInput.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-dark text-light p-0">
+            <div class="row gx-0 d-none d-lg-flex">
+                <div class="col-lg-7 px-5 text-start">
+                    <div class="h-100 d-inline-flex align-items-center me-4">
+                        <small
+                            class="fa fa-map-marker-alt text-primary me-2"
+                        ></small>
+                        <small
+                            >Av. Ricardo Soriano, 72, Portal B, 29601 Marbella,
+                            Málaga, España</small
+                        >
+                    </div>
+                    <div class="h-100 d-inline-flex align-items-center">
+                        <small class="far fa-clock text-primary me-2"></small>
+                        <small>Lun - Vie: 09.00 AM - 09.00 PM</small>
+                    </div>
+                </div>
+                <div class="col-lg-5 px-5 text-end">
+                    <div class="h-100 d-inline-flex align-items-center me-4">
+                        <small
+                            class="fa fa-phone-alt text-primary me-2"
+                        ></small>
+                        <small>+34686053539</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar Start -->
+        <nav
+            class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0"
+        >
+            <a
+                href="index.html"
+                class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5"
+            >
+                <h2 class="m-0">VivaHaven</h2>
+            </a>
+            <button
+                type="button"
+                class="navbar-toggler me-4"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                    <a href="catalog.html" class="nav-item nav-link active"
+                        >Catálogo</a
+                    >
+                    <a href="contact.html" class="nav-item nav-link"
+                        >Contacto</a
+                    >
+                </div>
+                <a
+                    href="index.html#appointment"
+                    class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"
+                    >Comenzar<i class="fa fa-arrow-right ms-3"></i
+                ></a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Page Header Start -->
+        <div
+            class="container-fluid page-header py-6 my-6 mt-0 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container text-center">
+                <h1 class="display-4 text-white animated slideInDown mb-4">
+                    Catálogo
+                </h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb justify-content-center mb-0">
+                        <li class="breadcrumb-item">
+                            <a class="text-white" href="index.html">Inicio</a>
+                        </li>
+                        <li
+                            class="breadcrumb-item text-primary active"
+                            aria-current="page"
+                        >
+                            Catálogo
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- Catalogo Inmobiliario Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 500px"
+                >
+                    <h6 class="text-primary text-uppercase mb-2">
+                        Propiedades en Venta
+                    </h6>
+                    <h1 class="display-6 mb-4">
+                        Compra y Venta de Casas y Apartamentos
+                    </h1>
+                    <p>
+                        Ofrecemos una amplia gama de servicios inmobiliarios
+                        diseñados para satisfacer las necesidades de nuestros
+                        clientes. Ya sea que busque comprar su primera vivienda
+                        o vender una propiedad, nuestro equipo está aquí para
+                        ayudarle en cada paso del proceso.
+                    </p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <!-- Propiedad 1 -->
+                    <div
+                        class="col-lg-4 col-md-4 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="courses-item d-flex flex-column bg-light overflow-hidden h-100"
+                        >
+                            <div class="text-center p-4">
+                                <h5 class="mb-3">Venta de Casa en Madrid</h5>
+                                <p>
+                                    Disfrute de esta hermosa casa en una de las
+                                    mejores zonas de Madrid. Con una amplia sala
+                                    de estar y jardín privado, esta propiedad es
+                                    ideal para familias.
+                                </p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img
+                                    class="img-fluid"
+                                    src="img/casa-1.jpg"
+                                    alt="Casa en Madrid"
+                                />
+                            </div>
+                            <a href="contact.html">
+                                <button
+                                    style="
+                                        background: #97bc62ff;
+                                        color: #fff;
+                                        width: 100%;
+                                    "
+                                    class="btn btn-primary py-3 px-5"
+                                    type="submit"
+                                    id="submit"
+                                >
+                                    Enviar Mensaje
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Propiedad 2 -->
+                    <div
+                        class="col-lg-4 col-md-4 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div
+                            class="courses-item d-flex flex-column bg-light overflow-hidden h-100"
+                        >
+                            <div class="text-center p-4">
+                                <h5 class="mb-3">Apartamento en Barcelona</h5>
+                                <p>
+                                    Apartamento moderno con vistas
+                                    espectaculares al mar en el centro de
+                                    Barcelona. Ideal para aquellos que buscan
+                                    comodidad y ubicación.
+                                </p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img
+                                    class="img-fluid"
+                                    src="img/apartamento-1.jpg"
+                                    alt="Apartamento en Barcelona"
+                                />
+                            </div>
+                            <a href="contact.html">
+                                <button
+                                    style="
+                                        background: #97bc62ff;
+                                        color: #fff;
+                                        width: 100%;
+                                    "
+                                    class="btn btn-primary py-3 px-5"
+                                    type="submit"
+                                    id="submit"
+                                >
+                                    Enviar Mensaje
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Propiedad 3 -->
+                    <div
+                        class="col-lg-4 col-md-4 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="courses-item d-flex flex-column bg-light overflow-hidden h-100"
+                        >
+                            <div class="text-center p-4">
+                                <h5 class="mb-3">Casa en Valencia</h5>
+                                <p>
+                                    Casa independiente con jardín, ideal para
+                                    aquellos que buscan tranquilidad. Situada en
+                                    un barrio residencial de Valencia.
+                                </p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img
+                                    class="img-fluid"
+                                    src="img/casa-2.jpg"
+                                    alt="Casa en Valencia"
+                                />
+                            </div>
+                            <a href="contact.html">
+                                <button
+                                    style="
+                                        background: #97bc62ff;
+                                        color: #fff;
+                                        width: 100%;
+                                    "
+                                    class="btn btn-primary py-3 px-5"
+                                    type="submit"
+                                    id="submit"
+                                >
+                                    Enviar Mensaje
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Propiedad 4 -->
+                    <div
+                        class="col-lg-4 col-md-4 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="courses-item d-flex flex-column bg-light overflow-hidden h-100"
+                        >
+                            <div class="text-center p-4">
+                                <h5 class="mb-3">
+                                    Apartamento de Lujo en Marbella
+                                </h5>
+                                <p>
+                                    Disfrute de una vida de lujo en Marbella.
+                                    Este exclusivo apartamento cuenta con todas
+                                    las comodidades modernas y vistas al mar.
+                                </p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img
+                                    class="img-fluid"
+                                    src="img/apartamento-2.jpg"
+                                    alt="Apartamento en Marbella"
+                                />
+                            </div>
+                            <a href="contact.html">
+                                <button
+                                    style="
+                                        background: #97bc62ff;
+                                        color: #fff;
+                                        width: 100%;
+                                    "
+                                    class="btn btn-primary py-3 px-5"
+                                    type="submit"
+                                    id="submit"
+                                >
+                                    Enviar Mensaje
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Propiedad 5 -->
+                    <div
+                        class="col-lg-4 col-md-4 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="courses-item d-flex flex-column bg-light overflow-hidden h-100"
+                        >
+                            <div class="text-center p-4">
+                                <h5 class="mb-3">Casa de Campo en Sevilla</h5>
+                                <p>
+                                    Hermosa casa de campo en Sevilla, perfecta
+                                    para aquellos que buscan escapar del
+                                    bullicio de la ciudad y disfrutar de la
+                                    naturaleza.
+                                </p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img
+                                    class="img-fluid"
+                                    src="img/casa-3.jpg"
+                                    alt="Casa en Sevilla"
+                                />
+                            </div>
+                            <a href="contact.html">
+                                <button
+                                    style="
+                                        background: #97bc62ff;
+                                        color: #fff;
+                                        width: 100%;
+                                    "
+                                    class="btn btn-primary py-3 px-5"
+                                    type="submit"
+                                    id="submit"
+                                >
+                                    Enviar Mensaje
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Propiedad 6 -->
+                    <div
+                        class="col-lg-4 col-md-4 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="courses-item d-flex flex-column bg-light overflow-hidden h-100"
+                        >
+                            <div class="text-center p-4">
+                                <h5 class="mb-3">Piso en Bilbao</h5>
+                                <p>
+                                    Piso moderno de dos habitaciones en el
+                                    centro de Bilbao. Perfecto para quienes
+                                    buscan comodidad y acceso a todos los
+                                    servicios.
+                                </p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img
+                                    class="img-fluid"
+                                    src="img/piso-1.jpg"
+                                    alt="Piso en Bilbao"
+                                />
+                            </div>
+                            <a href="contact.html">
+                                <button
+                                    style="
+                                        background: #97bc62ff;
+                                        color: #fff;
+                                        width: 100%;
+                                    "
+                                    class="btn btn-primary py-3 px-5"
+                                    type="submit"
+                                    id="submit"
+                                >
+                                    Enviar Mensaje
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Propiedad 7 -->
+                    <div
+                        class="col-lg-4 col-md-4 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="courses-item d-flex flex-column bg-light overflow-hidden h-100"
+                        >
+                            <div class="text-center p-4">
+                                <h5 class="mb-3">Ático en Alicante</h5>
+                                <p>
+                                    Ático con gran terraza en Alicante, ideal
+                                    para disfrutar de las vistas al mar y a la
+                                    ciudad. Excelente opción para vivir o
+                                    invertir.
+                                </p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img
+                                    class="img-fluid"
+                                    src="img/atico-1.jpg"
+                                    alt="Ático en Alicante"
+                                />
+                            </div>
+                            <a href="contact.html">
+                                <button
+                                    style="
+                                        background: #97bc62ff;
+                                        color: #fff;
+                                        width: 100%;
+                                    "
+                                    class="btn btn-primary py-3 px-5"
+                                    type="submit"
+                                    id="submit"
+                                >
+                                    Enviar Mensaje
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Propiedad 8 -->
+                    <div
+                        class="col-lg-4 col-md-4 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="courses-item d-flex flex-column bg-light overflow-hidden h-100"
+                        >
+                            <div class="text-center p-4">
+                                <h5 class="mb-3">Casa en Granada</h5>
+                                <p>
+                                    Amplia casa familiar en Granada, con un
+                                    jardín grande y varias habitaciones. Ideal
+                                    para una familia que busca calidad de vida.
+                                </p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img
+                                    class="img-fluid"
+                                    src="img/casa-4.jpg"
+                                    alt="Casa en Granada"
+                                />
+                            </div>
+                            <a href="contact.html">
+                                <button
+                                    style="
+                                        background: #97bc62ff;
+                                        color: #fff;
+                                        width: 100%;
+                                    "
+                                    class="btn btn-primary py-3 px-5"
+                                    type="submit"
+                                    id="submit"
+                                >
+                                    Enviar Mensaje
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Propiedad 9 -->
+                    <div
+                        class="col-lg-4 col-md-4 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="courses-item d-flex flex-column bg-light overflow-hidden h-100"
+                        >
+                            <div class="text-center p-4">
+                                <h5 class="mb-3">Apartamento en Valencia</h5>
+                                <p>
+                                    Apartamento moderno en el centro de
+                                    Valencia, cerca de tiendas y restaurantes.
+                                    Perfecto para quienes buscan vivir cerca de
+                                    todo.
+                                </p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img
+                                    class="img-fluid"
+                                    src="img/apartamento-3.jpg"
+                                    alt="Apartamento en Valencia"
+                                />
+                            </div>
+                            <a href="contact.html">
+                                <button
+                                    style="
+                                        background: #97bc62ff;
+                                        color: #fff;
+                                        width: 100%;
+                                    "
+                                    class="btn btn-primary py-3 px-5"
+                                    type="submit"
+                                    id="submit"
+                                >
+                                    Enviar Mensaje
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Propiedad 10 -->
+                    <div
+                        class="col-lg-4 col-md-4 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="courses-item d-flex flex-column bg-light overflow-hidden h-100"
+                        >
+                            <div class="text-center p-4">
+                                <h5 class="mb-3">Casa de Playa en Málaga</h5>
+                                <p>
+                                    Viva junto al mar en esta hermosa casa de
+                                    playa en Málaga. Disfrute de increíbles
+                                    vistas y acceso directo a la playa.
+                                </p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img
+                                    class="img-fluid"
+                                    src="img/casa-5.jpg"
+                                    alt="Casa en Málaga"
+                                />
+                            </div>
+                            <a href="contact.html">
+                                <button
+                                    style="
+                                        background: #97bc62ff;
+                                        color: #fff;
+                                        width: 100%;
+                                    "
+                                    class="btn btn-primary py-3 px-5"
+                                    type="submit"
+                                    id="submit"
+                                >
+                                    Enviar Mensaje
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Propiedad 11 -->
+                    <div
+                        class="col-lg-4 col-md-4 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="courses-item d-flex flex-column bg-light overflow-hidden h-100"
+                        >
+                            <div class="text-center p-4">
+                                <h5 class="mb-3">Dúplex en Zaragoza</h5>
+                                <p>
+                                    Dúplex con amplias habitaciones y balcón en
+                                    Zaragoza. Ideal para parejas o pequeñas
+                                    familias que buscan comodidad y ubicación.
+                                </p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img
+                                    class="img-fluid"
+                                    src="img/duplex-1.jpg"
+                                    alt="Dúplex en Zaragoza"
+                                />
+                            </div>
+                            <a href="contact.html">
+                                <button
+                                    style="
+                                        background: #97bc62ff;
+                                        color: #fff;
+                                        width: 100%;
+                                    "
+                                    class="btn btn-primary py-3 px-5"
+                                    type="submit"
+                                    id="submit"
+                                >
+                                    Enviar Mensaje
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Propiedad 12 -->
+                    <div
+                        class="col-lg-4 col-md-4 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="courses-item d-flex flex-column bg-light overflow-hidden h-100"
+                        >
+                            <div class="text-center p-4">
+                                <h5 class="mb-3">Chalet en Mallorca</h5>
+                                <p>
+                                    Chalet de lujo en Mallorca, con piscina
+                                    privada y vistas al mar. Perfecto para
+                                    quienes buscan privacidad y tranquilidad.
+                                </p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img
+                                    class="img-fluid"
+                                    src="img/chalet-1.jpg"
+                                    alt="Chalet en Mallorca"
+                                />
+                            </div>
+                            <a href="contact.html">
+                                <button
+                                    style="
+                                        background: #97bc62ff;
+                                        color: #fff;
+                                        width: 100%;
+                                    "
+                                    class="btn btn-primary py-3 px-5"
+                                    type="submit"
+                                    id="submit"
+                                >
+                                    Enviar Mensaje
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Catalogo Inmobiliario End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">ViviendaEspaña</h4>
+                        <p>
+                            Gracias por visitar nuestro sitio web. Estamos
+                            comprometidos a ayudarte en la compra y venta de
+                            propiedades en España. Explora nuestras ofertas,
+                            consulta nuestro catálogo y no dudes en contactarnos
+                            si necesitas ayuda personalizada.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-white mb-4">Contáctanos</h4>
+                        <p class="mb-2">
+                            <i class="fa fa-map-marker-alt me-3"></i>
+                            Av. Ricardo Soriano, 72, Portal B, 29601 Marbella,
+                            Málaga, España
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone-alt me-3"></i>
+                            +34686053539
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope me-3"></i>
+                            viva_haven@gmail.com
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Enlaces Rápidos</h4>
+                        <a class="btn btn-link" href="index.html">Inicio</a>
+                        <a class="btn btn-link" href="about.html"
+                            >Sobre Nosotros</a
+                        >
+                        <a class="btn btn-link" href="contact.html"
+                            >Contáctanos</a
+                        >
+                        <a class="btn btn-link" href="catalog.html"
+                            >Propiedades</a
+                        >
+
+                        <a class="btn btn-link" href="cookie-policy.html"
+                            >Política de cookies</a
+                        >
+                        <a class="btn btn-link" href="disclaimer.html"
+                            >Aviso legal</a
+                        >
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Enlaces Populares</h4>
+                        <a class="btn btn-link" href="about.html"
+                            >Sobre Nosotros</a
+                        >
+                        <a class="btn btn-link" href="contact.html"
+                            >Contáctanos</a
+                        >
+                        <a class="btn btn-link" href="terms-of-use.html"
+                            >Términos y Condiciones</a
+                        >
+                        <a class="btn btn-link" href="privacy-policy.html"
+                            >Política de Privacidad</a
+                        >
+                        <a class="btn btn-link" href="business-model.html"
+                            >Modelo de negocio</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+            ><i class="bi bi-arrow-up"></i
+        ></a>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Consentimiento de Cookies</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Este sitio web utiliza
+                    <a href="cookie-policy.html">política de cookies</a> para
+                    ofrecerte una mejor y más relevante experiencia de
+                    navegación en la página web relacionada con la compra y
+                    venta de propiedades en España.
+                    <a href="privacy-policy.html">más información...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Aceptar</button>
+                <button class="cookie-button" id="declineBtn">Rechazar</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
